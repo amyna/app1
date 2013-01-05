@@ -1,0 +1,105 @@
+﻿<! ce commentaire est à supprimer aprés avoir fini...
+Tester le qcm dans un navigateur avant de commencer
+Copier le dans un autre fichier et apporter vos modif à votre fichier. 
+Laisser cette copie comme secours au cas où ......
+-----------------------------------------------------------------------------------------
+Affichage des explications:
+	$explicationVrai : est le texte qui s'affiche lorsque la bonne rép est cochée
+	$explicationFaux1 : est le texte qui s'affiche lorsque la première rép fausse est cochée
+	$explicationFaux2  : est le texte qui s'affiche lorsque la seconde rép fausse est cochée
+-----------------------------------------------------------------------------------------
+Démarche: 
+1: Ecrire vos questions dans l'éditeur NVU/komposer/  en mode NORMAL
+(Vous pouvez aussi les écrire aussi en mode SOURCE, quoique ce n'est pas pratique )
+2: Aprés, en mode SOURCE, càd dans le code , NE MODIFIEZ QUE:
+ * les 3 lignes dans le premier script, càd les valeurs des variables:
+	$explicationVrai, $explicationFaux1, $explicationFaux2
+	
+ *L'ordre des titres H4 pour la bonne réponse ne soit pas toujours à deuxième ligne
+
+3: Testez votre fichier dans un navigateur.
+Mes salutations!
+ --------------------Fin coommentaire-----------------------------------------------
+ >
+  
+<script type="text/javascript">
+$explicationVrai="Bien: Ecrire ici une explication de la bonne réponse. " ;
+$explicationFaux1="Oups: Ecrire ici une explication prkoi c'est faux ";  
+$explicationFaux2="ah non: Ecrire ici pourkoi c'est faux "  ;
+
+function modifierText(id, texte) {
+	document.getElementById(id).innerHTML = texte;
+}
+</script>
+
+ 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" media="screen" type="text/css" title="design" href="style.css">
+<meta name="langage" content="FR,AR">
+<meta name="robots" content="All"><title>PhysiqueChimie Lycée</title>
+</head><body>
+<table id="tableglobale">
+<tbody>
+<tr>
+<td id="entete" colspan="5">
+Physique chimie au lycée
+</td>
+</tr>
+<tr>
+<td>
+<table id="menu">
+<tbody>
+<tr>
+<td class="boutton"><a href="about.html"> المزيد </a> </td>
+<td class="boutton"><a href="2bac.html"> باك 2</a></td>
+<td class="boutton"><a href="1bac.html">باك 1 </a></td>
+<td class="boutton""><a href="tc.html"> الجذع المشترك</a></td>
+<td class="boutton"><a href="index.html">الاولى</a></td>
+</tr>
+</tbody>
+</table>
+
+<br><br>
+<div id="q1">
+<form name="QCM">
+<h4>Remplacer ce texte par une question 1...</H4>
+<H4><input name="choix" value="choix1" type="radio" onclick="modifierText('explic0', $explicationFaux1);">Ecrire ici une réponse fausse</H4> 
+<H4><input name="choix" value="choix2" type="radio" onclick="modifierText('explic0', $explicationVrai);">Ecrire ici la bonne réponse </H4>
+<H4><input name="choix" value="choix3" type="radio" onclick="modifierText('explic0', $explicationFaux2);">Ecrire ici une réponse fausse</H4>
+<hr width="60%">
+<div id="explic0"></div>
+</form>
+<center> <a href="home1.html">home-></a>&nbsp&nbsp&nbsp<a href="#q2">Q suiv-></a></center>
+</div>
+<br><br><br><br><br><br>
+
+
+<div id="q2">
+<form name="QCM">
+<h4>Remplacer ce texte par une question 2...</H4>
+<H4><input name="choix" value="choix1" type="radio" onclick="modifierText('explic1', $explicationFaux1);">Réponse fausse 1</H4> 
+<H4><input name="choix" value="choix2" type="radio" onclick="modifierText('explic1', $explicationVrai);">Ecrire ici la bonne réponse </H4>
+<H4><input name="choix" value="choix3" type="radio" onclick="modifierText('explic1', $explicationFaux2);">une réponse fausse 2</H4>
+<hr width="60%">
+<div id="explic1"></div>
+</form>
+<center> <a href="#q1">Q préc-></a> &nbsp&nbsp <a href="home1.html">home-></a>&nbsp&nbsp&nbsp<a href="#q3">Q suiv-></a></center>
+</div>
+<br><br><br><br><br><br>
+
+<div id="q3">
+<form name="QCM">
+<h4>Remplacer ce texte par une question 3...</H4>
+<H4><input name="choix" value="choix1" type="radio" onclick="modifierText('explic2', $explicationFaux1);"> fausse</H4> 
+<H4><input name="choix" value="choix2" type="radio" onclick="modifierText('explic2', $explicationVrai);">JUSTE </H4>
+<H4><input name="choix" value="choix3" type="radio" onclick="modifierText('explic2', $explicationFaux2);">fausse</H4>
+<hr width="60%">
+<div id="explic2"></div>
+</form>
+<center> <a href="#q2">Q préc-></a> &nbsp&nbsp<a href="home1.html">home-></a>&nbsp&nbsp&nbsp</center>
+</div>
+<br><br><br><br><br><br>
+</body>
+</html>
