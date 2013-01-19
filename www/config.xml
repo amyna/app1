@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap/amyna.app1"
         version   = "2.0.0">
-    <name>Physique Chimie au Lycée Marocain</name>
+    <name>QCM-PC-Lycée Marocain</name>
 
     <description>
        Programme des sciences physiques- Maroc, conforme aux orientations officielles.
