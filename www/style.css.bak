@@ -24,7 +24,7 @@ COLOR:  #993333;
 
 H3{
 text-align: right;
-margin: 15px;
+margin: 20px;
 !background-color:#eeeeff;
 background-image:-webkit-gradient(linear,left top,left bottom,from( #AAA ),to( #DDD ));
 }
