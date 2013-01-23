@@ -24,15 +24,15 @@ COLOR:  #993333;
 
 H3{
 text-align: right;
-margin: 15px;
-!background-color:#eeeeff;
-background-image:-webkit-gradient(linear,left top,left bottom,from( #AAA ),to( #DDD ));
+margin: 10px;
+background-color:#eeeeff;
+background-image:-webkit-gradient(linear,left top,left bottom,from( #CCC ),to( #EEE ));
 }
 #tableglobale{
   width: 100%;
   margin:0px;
   padding:0;
-  background-color:white;
+  background-color:#FFFFDD;
   text-align: right;
   border:0;
 }
@@ -45,11 +45,7 @@ background-image:-webkit-gradient(linear,left top,left bottom,from( #AAA ),to( #
   color: white;
   text-align:center;
   width:100%;
-  Height:25px;
-  position:fixed;
-  top:  0 ;
-  left:0;
-  
+  Height:25px;  
    }
    
 #menu {
@@ -57,9 +53,6 @@ background-image:-webkit-gradient(linear,left top,left bottom,from( #AAA ),to( #
   background-color: #ffffff;
   width: 100%;
   text-align:center;
-  position: fixed;
-  top: 25px;
-  LEFT:0;
 }
 
 #footer {
