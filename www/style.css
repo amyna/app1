@@ -17,6 +17,28 @@ background-image: url(images/boutton.png)  ;
 height:20px;
 }
 
+#tableglobale{
+  width: 100%;
+  margin:0px;
+  padding:0;
+  background-color:#FFFFDD;
+  text-align: right;
+  border:0;
+}
+.casetitre{
+  width: 100%;
+  margin-left:10px;
+  padding:0px;
+background-image:-webkit-gradient(linear,left top,left bottom,from( #FFD ),to( #99F ));
+  text-align: right;
+  border: solid #993333;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border: 20px 20px 20px 20px;  
+  
+
+}
+
 H2{
 text-align: right;
 COLOR:  #993333;
@@ -25,8 +47,6 @@ COLOR:  #993333;
 H3{
 text-align: right;
 margin: 10px;
-background-color:#eeeeff;
-background-image:-webkit-gradient(linear,left top,left bottom,from( #CCC ),to( #EEE ));
 }
 #tableglobale{
   width: 100%;
